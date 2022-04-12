@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Safe Search",
+    "description": "An extension for safe search excluding the Haram and NFSW content",
+    "author": "Ahmed Gamal",
+    "version": "1.1",
+    "icons": {
+        "128": "assets/icons/icon128.png",
+        "64": "assets/icons/icon64.png",
+        "32": "assets/icons/icon32.png",
+        "16": "assets/icons/icon16.png"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "activeTab",
+        "tabs",
+        "notifications",
+        "<all_urls>"
+    ]
+}
